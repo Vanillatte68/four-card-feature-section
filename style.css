@@ -71,7 +71,6 @@ img {
   border-radius: 0.5rem;
   padding: 2rem;
   position: relative;
-  overflow: hidden;
   text-align: start;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
@@ -105,4 +104,32 @@ footer {
 
 footer a {
   color: var(--text-color-light);
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    grid-template: repeat(4, 1fr) / 1fr;
+    gap: 1rem;
+  }
+
+  .card {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .green {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .red {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .orange {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .blue {
+    grid-column: 1;
+    grid-row: 4;
+  }
 }
